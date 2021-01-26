@@ -7,7 +7,7 @@ const app = express()
 connectDB()
 
 const optionsCors = {
-    origin: process.env.FRONT_END_URL
+    origin: process.env.FRONT_END_URL || process.env.FRONT_END_URL2
 }
 app.use(cors(optionsCors))
 
